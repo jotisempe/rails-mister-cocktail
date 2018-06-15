@@ -29,9 +29,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# new gems (cloudinary & figaro)
+# new gems (cloudinary & figaro & carrierwave)
 gem 'cloudinary'
 gem 'figaro'
+gem 'carrierwave', '~> 1.2'
 
 # frontend gems
 gem 'autoprefixer-rails'
