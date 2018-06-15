@@ -1,2 +1,18 @@
-<h1>Cocktails#show</h1>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<h1><%= @cocktail.name %></h1>
+<br>
+<h4>Ingredients:</h4>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.association :ingredient, include_hidden: false %>
+<%= f.input :description %>
+<%= f.button :submit %>
+<% end %>
+
+<% @cocktail.doses.each do |dose| %>
+<p><%= dose.ingredient.name %></p>
+<p><%= dose.description %></p>
+<%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
+<%= fa_icon "trash" %>
+<% end %>
+<% end %>
+

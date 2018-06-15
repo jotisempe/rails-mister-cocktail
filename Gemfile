@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # frontend gems
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3.7'
-gem 'font-awesome-sass', '~> 5.0.9'
+gem 'font-awesome-rails'
 gem 'simple_form'
 
 # Use ActiveStorage variant

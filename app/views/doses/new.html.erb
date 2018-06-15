@@ -1,2 +1,7 @@
-<h1>Doses#new</h1>
-<p>Find me in app/views/doses/new.html.erb</p>
+<h1>Create a New Cocktail</h1>
+<p>(this is the new doses html</p>
+
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+<% end %>
